@@ -1,0 +1,116 @@
+/This code instucts the robot to randomly choose between two points in the maze and navigate to one of them
+task main()
+{
+//chooses a random number between 0 and 1
+int rand_num;
+rand_num=rand() % 2;
+
+//if number is zero navigates to point 2
+if(rand_num==0)
+{
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(2100);
+	
+//This code instructs the robot to make a 90 degree turn to the left
+	motor[motorB]=0;
+	motor[motorC]=50;
+
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(2000);
+	
+	//This code instructs the robot to make a 90 degree turn to the right
+	motor[motorB]=50;
+	motor[motorC]=0;
+
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(700);
+	
+	//This code instructs the robot to make a 90 degree turn to the right
+	motor[motorB]=50;
+	motor[motorC]=0;
+	
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+	
+	wait1Msec(1000);
+}
+
+//if the random number equals 1 the robot navigates to point 3
+if(rand_num==1)
+{
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(2100);
+	
+//This code instructs the robot to make a 90 degree turn to the left
+	motor[motorB]=0;
+	motor[motorC]=50;
+
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(2000);
+	
+	//This code instructs the robot to make a 90 degree turn to the lef
+	motor[motorB]=0;
+	motor[motorC]=50;
+
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+
+	wait1Msec(1700);
+	
+	//This code instructs the robot to make a 90 degree turn to the left
+	motor[motorB]=0;
+	motor[motorC]=50;
+	
+	wait1Msec(650);
+	
+	//this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+	
+	wait1Msec(1000);
+	
+	//This code instructs the robot to make a 90 degree turn to the left
+	motor[motorB]=0;
+	motor[motorC]=50;
+	
+	wait1Msec(650);
+	
+	////this code instructes the robot to go straight
+	motor[motorB]=50;
+	motor[motorC]=50;
+	
+	wait1Msec(1000);
+}
+	
+	
+	
+
+
+}
